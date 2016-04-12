@@ -11,3 +11,6 @@ yum install -y python-pip
 
 # Install virtualenv
 pip install virtualenv
+
+# Upgrade pip
+pip install --upgrade pip
