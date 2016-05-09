@@ -1,16 +1,7 @@
 #!/usr/bin/env bash
 
-# Add EPEL
-rpm -iUvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
-
-# Update the repos
-yum update
-
 # Install Ansible dependencies
-yum install -y python-pip
+sudo curl https://bootstrap.pypa.io/get-pip.py | sudo python -
 
 # Install virtualenv
-pip install virtualenv
-
-# Upgrade pip
-pip install --upgrade pip
+sudo pip install virtualenv

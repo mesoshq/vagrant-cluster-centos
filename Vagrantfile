@@ -6,13 +6,13 @@ require 'fileutils'
 Vagrant.require_version ">= 1.6.0"
 
 # Defaults for config options defined in CONFIG
-$num_instances = 5
+$num_instances = 3
 $instance_name_prefix = "centos"
 $enable_serial_logging = false
 $share_home = false
 $vm_gui = false
-$vm_memory = 1536
-$vm_cpus = 1
+$vm_memory = 3072
+$vm_cpus = 2
 $forwarded_ports = {}
 
 # Attempt to apply the deprecated environment variable NUM_INSTANCES to
