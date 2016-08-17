@@ -1,6 +1,6 @@
 ---
 cluster_name: mesosctl_cluster_centos
-os: centos7
+os: "Centos 7"
 os_family: RedHat
 ssh_key_path: ~/.vagrant.d/insecure_private_key
 ssh_port: 22
