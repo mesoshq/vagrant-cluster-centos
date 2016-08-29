@@ -63,8 +63,9 @@ Vagrant.configure("2") do |config|
         end
       end
 
-      $forwarded_ports.each do |guest, host|
-        config.vm.network "forwarded_port", guest: guest, host: host, auto_correct: true
+      # foward Docker registry port to host for node 01
+      if i == 1
+        config.vm.network :forwarded_port, guest: 5000, host: 5000
       end
 
       config.vm.provider :virtualbox do |vb|
